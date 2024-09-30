@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="1000.png"/>
+  </head>
+  <body>
+    <div id="ust" > <img onclick="alert('Home')" src="logo22.jpg" id="lobi"> <h1 id="home">Home</h1>  
+      <input type="button" id="" onclick="gosterme()"  value="güncelleme notları">
+    
+    </div>
+    <br>
+    <div class="container">
+      <input type="button" class="tooltip" value="✔" id="checkAll" onclick="checkAllFunction()"/>
+      <input type="button" class="tooltip" value="✖" id="UnCheckAll" onclick="UnCheckAllFunction()"/>
+      <input type="button" class="tooltip" value="💥" id="seciliSil" onclick="secili()"/>
+      <input type="text" id="todo-input"  placeholder="Eklemek istediğiniz işleri yazınız."/>
+      <input type="button" id="add" onclick="ekleGorev()" value="Add"/>
+      <input type="button" id="delete" onclick="silGorev()" value="Clear" />
+      <h1>Görevler:</h1>
+      <ul id="mission" >
+      </ul>
+      </div>
+      <div id="infoBox" class="info-box">
+        <p>
+          <span class="belirgin">
+            ⭐HOŞGELDİN⭐<br>
+            <br>
+            <l style="text-decoration: line-through;"> 1.0 Güncellemesi:</l><br>
+        <a id="guncelleme" href="guncel.html">Tıkla</a>
+        <br>
+            1.1 Güncellemesi:<br>
+            <a id="guncelleme" href="guncel.html">Tıkla</a>
+            <br>⭐2.0 Güncellemesi:⭐<br>
+            <a id="guncelleme" href="guncel.html">Tıkla</a>
+        </span>
+      </p>
+        <button onclick="onayy()">Tamam</button>
+          <label>
+        <input type="checkbox" id="gostermeBidaha"> Bir Daha Gösterme
+      </label>
+    </div>
+    <div>
+      <div id="content"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
